@@ -14,7 +14,6 @@ import java.util.Collection;
 public class Member {
     @Id
     private String memberId;
-    @Column(length = 60)
     private String memberPass;
     private String memberName;
     private String memberTel;
