@@ -1,0 +1,29 @@
+# database
+database: mysql
+# jpa auto update
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  # datasource mysql connection
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC
+    username: root
+    password: password
+# devtools reloading
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  security:
+    # security
+    user:
+      name: user
+      passwrd: test
+
+
+# change server port
+server:
+  port: 8081
